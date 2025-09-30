@@ -1,0 +1,53 @@
+/* Pagination Styling */
+.swiper-pagination {
+  bottom: px !important;
+  left: 20px !important;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: auto !important;
+}
+
+.swiper-pagination-bullet {
+  width: 32px;
+  height: 6px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.35);
+  opacity: 1;
+  transition: width 0.3s ease;
+  margin: 0 !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet-active {
+  width: 48px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.swiper-pagination-bullet-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: white;
+  border-radius: 9999px;
+  animation: fillPill 4s linear forwards;
+}
+
+@keyframes fillPill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Reset animation when switching slides */
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active)::before {
+  animation: none;
+  width: 0;
+}
