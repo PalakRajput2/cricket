@@ -5,7 +5,7 @@ export default function CustomerHighlights({ activeIndex }: { activeIndex: numbe
   const avatar = testimonials[activeIndex % testimonials.length].src;
 
   return (
-    <div className="flex items-center gap-12 w-[337px] h-[92px] md:mt-8">
+    <div className="flex items-center gap-6 md:gap-12 w-[337px] h-[92px] md:mt-8">
       {/* Avatar + Play Button */}
       <div className="relative w-[92px] h-[92px] flex-shrink-0">
         {/* Gradient ring */}
