@@ -11,32 +11,32 @@ const HeroSection = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     
     return (
-        <div className="h-full  relative md:w-full md:h-[450px] rounded-[40px] overflow-hidden">
+        <div className="h-full  relative md:w-full md:h-[450px] rounded-[40px] overflow-hidden pt-8 pb-8 pl-6 pr-6 md:pt-12 md:pb-12 md:pl-8 md:pr-8">
             <div className="w-full h-full">
                 <Image
                     src="/assets/emirates.jpg"
                     alt="Emirates Stadium"
                     fill
                     className="object-cover" />
-                <div className="absolute inset-0 [background:linear-gradient(270deg,rgba(53,84,209,0.25)_60.39%,rgba(53,84,209,1)_72.76%,rgba(53,84,209,1)_100%),linear-gradient(119.84deg,rgba(53,84,209,0.25)_52.27%,rgba(53,84,209,1)_84.84%)] md:[background:linear-gradient(270deg,rgba(53,84,209,0)_60.39%,rgba(53,84,209,0.5)_72.76%,rgba(53,84,209,0.5)_100%),linear-gradient(119.84deg,rgba(53,84,209,0)_52.27%,rgba(53,84,209,0.5)_84.84%)]">
+                <div className="absolute inset-0 [background:linear-gradient(260deg,rgba(53,84,209,0.25)_60.39%,rgba(53,84,209,1)_72.76%,rgba(53,84,209,1)_100%),linear-gradient(119.84deg,rgba(53,84,209,0.25)_52.27%,rgba(53,84,209,1)_84.84%)]    md:[background:linear-gradient(270deg,rgba(53,84,209,0)_60.39%,rgba(53,84,209,0.5)_72.76%,rgba(53,84,209,0.5)_100%),linear-gradient(119.84deg,rgba(53,84,209,0)_52.27%,rgba(53,84,209,0.5)_84.84%)]">
                 </div>
 
-                <div className="relative z-10 flex flex-col lg:flex-row justify-between pt-8 pb-8 pl-6 pr-6 md:pt-12 md:pb-16 md:pl-8 md:pr-10 h-full">
+                <div className="relative z-10 flex flex-col lg:flex-row justify-between  h-full">
                     {/* Left Side */}
                     <div className=" md:w-[576px] md:h-[354px]">
                         <div className="font-plus text-white md:w-[576px]md: h-[166px]">
-                            <h1 className="text-[26px] md:text-[64px] font-semibold mb-2 md:mb-0">Arsenal Tickets</h1>
+                            <h1 className="text-[26px] md:text-[64px] font-semibold mb-2 md:mb-1">Arsenal Tickets</h1>
                             <p className="text-[15px] font-normal md:text-[18px] text-[rgba(255, 255, 255, 1)] leading-[150%] tracking-[0.02em]">
                                 Buy Arsenal tickets for Premier League, Champions League, and Cup
                                 matches at Emirates Stadium. Secure your seats to watch the Gunners
                                 live in action.
                             </p>
                         </div>
-                        <div className="mt-0 md:mt-6">
+                        <div className="mt-0 md:mt-10">
                              <CustomerHighlights activeIndex={activeIndex} />
                         </div>
 
-                        <div className="mt-6 h-[26px] md:w-[433.67px] md:h-[30px]">
+                        <div className="mt-7 h-[26px] md:w-[433.67px] md:h-[30px]">
                             <ReviewBadge  />
                         </div>
                     </div>
@@ -47,7 +47,7 @@ const HeroSection = () => {
                         <BenefitBadge text="Best price are guaranteed" />
                         <BenefitBadge text="We guarantee seats together" />
                     </div>
-                    <div className=" hidden absolute md:flex right-0 bottom-11 pr-5 items-end  ">
+                    <div className=" hidden absolute md:flex right-0 bottom-0 pr-5 items-end  ">
                           <Testimonial onSlideChange={setActiveIndex} />
                     </div>
 

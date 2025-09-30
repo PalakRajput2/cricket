@@ -60,11 +60,11 @@ export default function Testimonial({ onSlideChange }: { onSlideChange: (index: 
       </Swiper>
 
       {/* Custom Nav Buttons */}
-      <div className="absolute bottom-2 right-4 flex gap-2 z-10 ">
-        <button className="prev-btn w-9 h-9 rounded-full flex items-center justify-center hover:bg-white/35 transition border border-white/30">
+      <div className="absolute bottom-2 right-4 flex gap-2 z-10  ">
+        <button className="prev-btn w-9 h-9 rounded-full flex items-center justify-center hover:bg-white/35 transition border border-white/30 cursor-pointer">
           <ChevronLeft className="text-white size-[25px]" strokeWidth={2.5} />
         </button>
-        <button className="next-btn w-9 h-9 rounded-full flex items-center justify-center hover:bg-white/35 transition border border-white/30">
+        <button className="next-btn w-9 h-9 rounded-full flex items-center justify-center hover:bg-white/35 transition border border-white/30 cursor-pointer">
           <ChevronRight className="text-white size-[25px]" strokeWidth={2.5} />
         </button>
       </div>
