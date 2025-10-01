@@ -36,7 +36,7 @@ export default function ReviewBadge() {
         height={13.25}
         className="object-contain w-[14px] "
       />
-      <span className="font-roboto text-[13px] leading-[26px] text-[#ffffff]/70">Trustpilot</span>
+      <span className="font-roboto text-[13px] leading-[26px] text-[#ffffff]">Trustpilot</span>
       </div>
     </div>
   );

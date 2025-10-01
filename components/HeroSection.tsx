@@ -18,7 +18,7 @@ const HeroSection = () => {
                     alt="Emirates Stadium"
                     fill
                     className="object-cover" />
-                <div className="absolute inset-0 [background:linear-gradient(260deg,rgba(53,84,209,0.25)_60.39%,rgba(53,84,209,1)_72.76%,rgba(53,84,209,1)_100%),linear-gradient(119.84deg,rgba(53,84,209,0.25)_52.27%,rgba(53,84,209,1)_84.84%)]    md:[background:linear-gradient(270deg,rgba(53,84,209,0)_60.39%,rgba(53,84,209,0.5)_72.76%,rgba(53,84,209,0.5)_100%),linear-gradient(119.84deg,rgba(53,84,209,0)_52.27%,rgba(53,84,209,0.5)_84.84%)]">
+                <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(53,84,209,0.1875)_56.42%,rgba(53,84,209,0.75)_81.81%,rgba(53,84,209,0.75)_100%),linear-gradient(138.36deg,rgba(53,84,209,0.1875)_23.53%,rgba(53,84,209,0.75)_76.47%)]   md:[background:linear-gradient(270deg,rgba(53,84,209,0)_60.39%,rgba(53,84,209,0.5)_72.76%,rgba(53,84,209,0.5)_100%),linear-gradient(119.84deg,rgba(53,84,209,0)_52.27%,rgba(53,84,209,0.5)_84.84%)]">
                 </div>
 
                 <div className="relative z-10 flex flex-col lg:flex-row justify-between  h-full">
@@ -26,7 +26,7 @@ const HeroSection = () => {
                     <div className=" md:w-[576px] md:h-[354px]">
                         <div className="font-plus text-white md:w-[576px]md: h-[166px]">
                             <h1 className="text-[26px] md:text-[64px] font-semibold mb-2 md:mb-1">Arsenal Tickets</h1>
-                            <p className="text-[15px] font-normal md:text-[18px] text-[rgba(255, 255, 255, 1)] leading-[150%] tracking-[0.02em]">
+                            <p className="text-[15px] font-normal md:text-[18px] text-[#FFFFFF] leading-[150%] tracking-[0.02em]">
                                 Buy Arsenal tickets for Premier League, Champions League, and Cup
                                 matches at Emirates Stadium. Secure your seats to watch the Gunners
                                 live in action.
